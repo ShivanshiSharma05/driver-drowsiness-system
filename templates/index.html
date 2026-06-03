@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>AI Driver Safety Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="header">
+        AI Driver Safety Monitoring Dashboard
+    </div>
+
+    <div class="container">
+
+        <img src="{{ url_for('video') }}">
+
+        <div class="cards">
+
+            <div class="card">
+                <h2>System</h2>
+                <p>Real-Time Monitoring</p>
+            </div>
+
+            <div class="card">
+                <h2>Alerts</h2>
+                <p>Drowsiness Detection</p>
+            </div>
+
+            <div class="card">
+                <h2>Status</h2>
+                <p>AI Active</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Developed using Python, OpenCV, Flask & Computer Vision
+    </div>
+
+</body>
+
+</html>
